@@ -42,6 +42,7 @@
 			<div class="content">
 				<div class="title">tekwebdesign</div>
 				<div class="quote">{{ Inspiring::quote() }}</div>
+					<p>713.498.8667</p>
 			</div>
 		</div>
 	</body>
