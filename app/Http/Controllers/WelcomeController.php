@@ -30,15 +30,13 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		\Debugbar::info('So far so good');
-		
-		$items = array(
-					   'items' => ['Pack luggage', 'Go to airport', 'Arrive in San Juan' ],
-					   );
-		//dd($items); outputs it to the screen
-		//\Log::debug($items); log is at storage/logs/laravel/log
-		
+		//$data = array('name'=>'Lima Peru','date'=>'Hello');
 		return view('welcome');
+	}
+	
+	public function category($category) {
+		return view('blog.category')
+				->with('category', $category);
 	}
 
 }
